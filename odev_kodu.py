@@ -83,7 +83,8 @@ df['furnishingstatus']=df['furnishingstatus'].astype('category').cat.codes
 
 
 corr_matrix=df.corr('kendall')
-print(corr_matrix)
+plt.matshow(corr_matrix)
+plt.show()
 
 
 
