@@ -71,7 +71,7 @@ plt.show()
 
 
 
-
+#assigning numbers to string values for evaluation
 df['mainroad']=df['mainroad'].astype('category').cat.codes
 df['guestroom']=df['guestroom'].astype('category').cat.codes
 df['basement']=df['basement'].astype('category').cat.codes
@@ -81,8 +81,11 @@ df['prefarea']=df['prefarea'].astype('category').cat.codes
 df['furnishingstatus']=df['furnishingstatus'].astype('category').cat.codes
 
 
-
+#printing the matrix on terminal
 corr_matrix=df.corr('kendall')
+print(corr_matrix)
+
+#generating heatmap
 plt.matshow(corr_matrix)
 plt.show()
 
