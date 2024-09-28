@@ -82,7 +82,7 @@ df['furnishingstatus']=df['furnishingstatus'].map({'unfurnished': 0, 'semi-furni
 
 
 #printing the matrix on terminal
-corr_matrix=df.corr('kendall')
+corr_matrix=df.corr('spearman')
 print(corr_matrix)
 
 #generating heatmap
