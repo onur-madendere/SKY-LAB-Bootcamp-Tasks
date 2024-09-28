@@ -87,6 +87,7 @@ print(corr_matrix)
 
 #generating heatmap
 plt.matshow(corr_matrix)
+plt.title('Correlation Matrix Heatmap')
 plt.show()
 
 
